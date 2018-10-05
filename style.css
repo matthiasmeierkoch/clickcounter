@@ -1,0 +1,28 @@
+
+
+* {
+    user-select: none;
+}
+
+
+#cookie{
+    height: 250px;
+    width: 250px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:2%;
+    margin-left: 43vw;
+}
+
+#counter{
+    font-family: Helvetica;
+    font-size: 1.6em;
+    margin-top:2%;
+    margin-left: 50vw;
+}
+
+#progressBar {
+    margin-top: 2%;
+    margin-left: 45vw;
+}
