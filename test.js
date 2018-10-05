@@ -1,6 +1,8 @@
 let cookie = document.getElementById("cookie")
 let counter = document.getElementById("counter")
 
+let showOverlay = document.getElementById("showOverlay");
+
 let points = 0;
 let display = null;
 //let fiveMinutes = 10 ;
@@ -20,7 +22,15 @@ let clicker = function(e) {
                 document.getElementById("progressBar").value = timeleft;
                 if(timeleft <= 0) {
                     clearInterval(downloadTimer);
+                   // alert("Game Over")
                     // end of game
+                    let showOverlayEvent = function(e) {
+                        e.preventDefault; // default behaviour chanceled
+                        overlay.classList.remove("layer-hidden");
+                        close.classList.remove("layer-hidden");
+
+
+                    }
                 }
             }, 1000);
 

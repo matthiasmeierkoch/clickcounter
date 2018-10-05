@@ -4,11 +4,14 @@
     user-select: none;
 }
 
+html{
+    background: peachpuff;
+}
 
 #cookie{
     height: 250px;
     width: 250px;
-    background-color: #bbb;
+    background-color: midnightblue;
     border-radius: 50%;
     display: inline-block;
     margin-top:2%;
@@ -26,3 +29,14 @@
     margin-top: 2%;
     margin-left: 45vw;
 }
+
+.layer-hidden{
+    display: none;
+}
+
+progress[10]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
