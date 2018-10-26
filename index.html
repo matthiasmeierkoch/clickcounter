@@ -3,18 +3,38 @@
 <head>
     <meta charset="utf-8">
     <title>Cookie Counter</title>
+    <link rel="stylesheet" href="foundation-6.4.2-custom/css/foundation.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
+<div class="grid-x">
 
-<div id="cookie"></div>
-<div id="counter">0</div>
+    <div class="spacer large-offset-3 large-6 center container">
 
-<progress value="10" max="10" id="progressBar"></progress>
-<div class="layer-hidden" id="score">0</div>
-<div class="layer-hidden" id="gameover">Game Over</div>
-<div class="layer-hidden" id="restart">restart</div>
+        <h1 class="title">click here</h1>
+        <img class="arrow bounce-top" src="assets/down-arrow.svg"><br>
+
+        <div id="cookie"></div>
+        <div id="counter">0</div>
+
+        <progress value="5" max="5" id="progressBar"></progress>
+    </div>
+
+
+    <div class="large-6">
+        <div class="layer-hidden" id="gameOver">
+            <div id="score">0</div>
+            <div id="gameover">TIME OUT</div>
+            <a href="javascript:history.go(0)">Restart</a>
+        </div>
+
+
+    </div>
+
+
+</div>
 
 <script src="test.js"></script>
 

@@ -1,30 +1,32 @@
 let cookie = document.getElementById("cookie")
 let counter = document.getElementById("counter")
-
 let showOverlay = document.getElementById("showOverlay");
+let gameoOver = document.getElementById("gameOver");
 
 let points = 0;
 let display = null;
 //let fiveMinutes = 10 ;
-let timeleft = 10;
+let timeleft = 5;
 
-let clicker = function(e) {
+let clicker = function (e) {
 
-    if(timeleft > 0) {
+    if (timeleft > 0) {
 
         points = points + 1;
 
         if (points === 1) {
 
 
-            var downloadTimer = setInterval(function(){
+            var downloadTimer = setInterval(function () {
                 timeleft = timeleft - 1;
                 document.getElementById("progressBar").value = timeleft;
-                if(timeleft <= 0) {
+                if (timeleft <= 0) {
                     clearInterval(downloadTimer);
-                   // alert("Game Over")
+
+                    gameOver.classList.remove("layer-hidden");
+
                     // end of game
-                    let showOverlayEvent = function(e) {
+                    let showOverlayEvent = function (e) {
                         e.preventDefault; // default behaviour chanceled
                         overlay.classList.remove("layer-hidden");
                         close.classList.remove("layer-hidden");
@@ -35,7 +37,6 @@ let clicker = function(e) {
             }, 1000);
 
 
-
         }
         counter.innerHTML = points;
     }
@@ -44,10 +45,7 @@ let clicker = function(e) {
 cookie.addEventListener("click", clicker);
 
 
-
 // Progress bar timer Start Timer
-
-
 
 
 /* Timer 2
