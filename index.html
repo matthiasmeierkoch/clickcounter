@@ -11,27 +11,32 @@
 
 <div class="grid-x">
 
-    <div class="spacer large-offset-3 large-6 center container">
+    <div class="spacer large-offset-2 large-8 center container">
 
         <h1 class="title">click here</h1>
         <img class="arrow bounce-top" src="assets/down-arrow.svg"><br>
 
         <div id="cookie"></div>
         <div id="counter">0</div>
+        time left: <div id="timeview">5</div>s
 
         <progress value="5" max="5" id="progressBar"></progress>
     </div>
+</div>
 
 
-    <div class="large-6">
-        <div class="layer-hidden" id="gameOver">
-            <div id="score">0</div>
-            <div id="gameover">TIME OUT</div>
+        <div class="layer-hidden gameover large-12" id="gameOver">
+
+            <div class="spacer">
+            <div id="gameover">time out, your score:</div>
+            <div id="total">0</div>
             <a href="javascript:history.go(0)">Restart</a>
+            </div>
+
         </div>
 
 
-    </div>
+
 
 
 </div>

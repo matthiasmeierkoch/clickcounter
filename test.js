@@ -1,5 +1,7 @@
 let cookie = document.getElementById("cookie")
 let counter = document.getElementById("counter")
+let total = document.getElementById("total")
+let timeview = document.getElementById("timeview")
 let showOverlay = document.getElementById("showOverlay");
 let gameoOver = document.getElementById("gameOver");
 
@@ -20,10 +22,13 @@ let clicker = function (e) {
             var downloadTimer = setInterval(function () {
                 timeleft = timeleft - 1;
                 document.getElementById("progressBar").value = timeleft;
+                timeview.innerHTML = timeleft;
+
                 if (timeleft <= 0) {
                     clearInterval(downloadTimer);
 
                     gameOver.classList.remove("layer-hidden");
+                    total.innerHTML = points;
 
                     // end of game
                     let showOverlayEvent = function (e) {
