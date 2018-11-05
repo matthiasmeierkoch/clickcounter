@@ -1,14 +1,21 @@
-let cookie = document.getElementById("cookie")
-let counter = document.getElementById("counter")
-let total = document.getElementById("total")
-let timeview = document.getElementById("timeview")
+let cookie = document.getElementById("cookie");
+let counter = document.getElementById("counter");
+let total = document.getElementById("total");
+let timeview = document.getElementById("timeview");
 let showOverlay = document.getElementById("showOverlay");
 let gameoOver = document.getElementById("gameOver");
+let close = document.getElementById("close");
 
 let points = 0;
 let display = null;
 //let fiveMinutes = 10 ;
 let timeleft = 5;
+
+let showOverlayEvent = function(e) {
+    e.preventDefault; // default behaviour chanceled
+    overlay.classList.remove("layer-hidden");
+    close.classList.remove("layer-hidden");
+}
 
 let clicker = function (e) {
 
@@ -31,11 +38,11 @@ let clicker = function (e) {
                     total.innerHTML = points;
 
                     // end of game
+
                     let showOverlayEvent = function (e) {
                         e.preventDefault; // default behaviour chanceled
                         overlay.classList.remove("layer-hidden");
                         close.classList.remove("layer-hidden");
-
 
                     }
                 }
@@ -49,36 +56,6 @@ let clicker = function (e) {
 
 cookie.addEventListener("click", clicker);
 
-
-// Progress bar timer Start Timer
-
-
-/* Timer 2
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-
-        if (timer === 0) {
-            // alert("kkk")
-
-
-        }
-
-
-    }, 1000);
-}
-*/
 
 window.onload = function () {
     display = document.querySelector('#time');
