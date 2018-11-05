@@ -17,7 +17,23 @@ let showOverlayEvent = function(e) {
     close.classList.remove("layer-hidden");
 }
 
-let clicker = function (e) {
+cookie.addEventListener("mousedown", mousedown);
+cookie.addEventListener("mouseup", mouseup);
+
+function mousedown(){
+    clearInterval(subtractinterval);
+    document.getElementById("cookie").style.backgroundImage = "url('./assets/bubble2.png')";
+    clearInterval(itv);
+}
+
+function mouseup(){
+    subtractinterval = window.setInterval(subtractpoints, 500);
+    document.getElementById("cookie").style.backgroundImage = "url('./assets/bubble1.png')";
+    io = !io;
+    return itv = setInterval(count, 10);
+}
+
+    let clicker = function (e) {
 
     if (timeleft > 0) {
 

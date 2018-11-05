@@ -42,14 +42,15 @@ body{
 .startscreen{
     margin-top: 10rem;
 }
+
 #cookie{
+    background-image: url("assets/bubble1.png");
     height: 250px;
     width: 250px;
     background-color: midnightblue;
     border-radius: 50%;
     display: inline-block;
     margin-top:2%;
-    box-shadow: 5px 5px 5px grey;
 }
 
 
