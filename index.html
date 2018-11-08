@@ -13,41 +13,36 @@
 
     <div class="large-10 large-offset-1 center startscreen" id="startScreen">
         <h2>Click Challange</h2>
-        <p>How many clicks can you get?</p>
-        <p>Click «Start» when you're read!</p>
+        <div class="text">
+            <p>How many clicks can you get?</p>
+            <p>Click «Start» when you're read!</p>
+        </div>
         <div class="center startbutton" id="start">
             <p class="buttontext">Start</p>
         </div>
     </div>
 
-    <div class=" layer-hidden spacer large-offset-2 large-8 center container" id="showOverlay">
-
+    <div class=" layer-hidden spacer large-offset-2 large-8 center" id="showOverlay">
         <h1 class="title">click here</h1>
-        <img class="arrow bounce-top" src="assets/down-arrow.svg"><br>
-
-        <div id="cookie"></div>
-        <div id="counter">0</div>
-        time left:
-        <div id="timeview">5</div>
-
-
+        <img id="cookie" src="./assets/bubble1.png">
+        <div class="timesection">
+            <div id="counter">0</div>
+            <p>time left:</p>
+            <div id="timeview">5</div>
+        </div>
         <progress value="5" max="5" id="progressBar"></progress>
     </div>
 
-</div>
 
-
-<div class="layer-hidden gameover large-12" id="gameOver">
-
-    <div class="spacer">
+    <div class="layer-hidden gameover large-12" id="gameOver">
+        <h2>Game Over</h2>
         <div id="score">time out, your score:</div>
         <div id="total">0</div>
         <a id="restart">Restart</a>
+
     </div>
 
-</div>
-
-<script src="test.js"></script>
+    <script src="test.js"></script>
 
 </body>
 </html>

@@ -4,60 +4,65 @@
     user-select: none;
 }
 
-html{
-    font-size: 1,5rem;
+body {
+    font-family: Hind Madurai;
+    background: #403A3E; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BE5869, #403A3E); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-body{
-    font-family: "Hind Madurai";
-    background-image: url("assets/background.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-size: 1rem;
+h2 {
+    margin-top: 15rem;
+    font-size: 5rem;
+    color: #ffffff;
 }
 
-.center{
-    margin: 0 auto;
-    width: 200px;
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+#total {
+    font-weight: 600;
+}
+
+.buttontext {
     text-align: center;
+    padding-top: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.startbutton{
+.startbutton {
     background: green;
     color: white;
-    height: 40px;
-    width: 100px;
+    height: 60px;
+    width: 180px;
     border-radius: 10px;
     text-align: center;
 }
 
-.buttontext{
+.startscreen {
+    margin-top: 15rem;
+}
+
+.center {
+    margin: 0 auto;
     text-align: center;
-    padding-top: 0.5rem;
+    color: #ffffff;
 }
 
-.startscreen{
-    margin-top: 10rem;
+#cookie {
+    width: 40%;
+
+    margin: auto 0;
+
+
 }
 
-#cookie{
-    background-image: url("assets/bubble1.png");
-    background-position-x: 0px;
-    background-position-y: 0px;
-    height: 250px;
-    width: 250px;
-    background-color: midnightblue;
-    display: inline-block;
-    margin-top:2%;
-}
-
-
-#counter{
+#counter {
     font-size: 1.6em;
-    margin-top:2%;
+    margin-top: 2%;
 
 }
 
@@ -65,18 +70,36 @@ body{
     margin-top: 2%;
 }
 
-.container{
-    background-color:lightgray;
+.title {
+    font-family: "Hind Madurai";
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
 }
 
-.spacer{
+.timesection {
+    font-family: "Hind Madurai";
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.spacer {
     margin-top: 8vw;
 }
-.layer-hidden{
+
+.layer-hidden {
     display: none;
 }
 
-.gameover{
+.gameover {
     position: fixed;
     top: 0;
     left: 0;
@@ -85,28 +108,15 @@ body{
     background-color: #FF0000;
     text-align: center;
     color: #ffffff;
-    font-size: 2rem ;
+    font-size: 2rem;
 }
 
-a{
-    text-decoration: underline;
-    color: white;
+progress {
+
+    10
 }
 
-
-.title{
-    font-family: "Hind Madurai" ;
-    font-weight: 600;
-    text-align:center;
-    color: #FF0000;
-    font-size: 2.5rem;
-}
-
-.arrow{
-    width: 6vw;
-}
-
-progress[10]::-webkit-progress-bar {
+::-webkit-progress-bar {
     background-color: #eee;
     border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;

@@ -13,12 +13,12 @@ let timeleft = 5;
 
 function mousedown() {
     console.log("MouseDown");
-    document.getElementById("cookie").style.backgroundImage = "url('./assets/bubble2.png')";
+    document.getElementById("cookie").src = "./assets/bubble2.png";
 }
 
 function mouseup() {
     console.log("MouseUp");
-    document.getElementById("cookie").style.backgroundImage = "url('./assets/bubble1.png')";
+    document.getElementById("cookie").src = "./assets/bubble1.png";
 }
 
 function showStartScreen(){
