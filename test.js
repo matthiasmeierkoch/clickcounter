@@ -3,14 +3,13 @@ let counter = document.getElementById("counter");
 let total = document.getElementById("total");
 let timeview = document.getElementById("timeview");
 let gameOver = document.getElementById("gameOver");
-let close = document.getElementById("close");
-
+let start = document.getElementById("start");
+let startScreen = document.getElementById("startScreen");
+let showOverlay = document.getElementById("showOverlay");
+let restart = document.getElementById("restart");
 let points = 0;
 let timeleft = 5;
 
-
-cookie.addEventListener("mousedown", mousedown);
-cookie.addEventListener("mouseup", mouseup);
 
 function mousedown() {
     console.log("MouseDown");
@@ -22,7 +21,30 @@ function mouseup() {
     document.getElementById("cookie").style.backgroundImage = "url('./assets/bubble1.png')";
 }
 
-let clicker = function (e) {
+function showStartScreen(){
+    startScreen.classList.remove("layer-hidden");
+    showOverlay.classList.add("layer-hidden");
+    gameOver.classList.add("layer-hidden");
+
+}
+
+function startGame(){
+    startScreen.classList.add("layer-hidden");
+    showOverlay.classList.remove("layer-hidden");
+    gameOver.classList.add("layer-hidden");
+    points = 0;
+    timeleft = 5;
+    timeview.innerHTML = timeleft;
+}
+
+function endGame(){
+    startScreen.classList.add("layer-hidden");
+    showOverlay.classList.add("layer-hidden");
+    gameOver.classList.remove("layer-hidden");
+}
+
+
+function clicker(e){
 
     if (timeleft > 0) {
 
@@ -39,7 +61,7 @@ let clicker = function (e) {
                 if (timeleft <= 0) {
                     clearInterval(gameTimer);
 
-                    gameOver.classList.remove("layer-hidden");
+                    endGame();
                     total.innerHTML = points;
 
                 }
@@ -49,6 +71,14 @@ let clicker = function (e) {
         }
         counter.innerHTML = points;
     }
-};
+}
 
 cookie.addEventListener("click", clicker);
+cookie.addEventListener("mousedown", mousedown);
+cookie.addEventListener("mouseup", mouseup);
+start.addEventListener("click", startGame);
+restart.addEventListener("click", startGame);
+
+
+showStartScreen();
+
