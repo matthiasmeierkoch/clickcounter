@@ -45,10 +45,11 @@ body{
 
 #cookie{
     background-image: url("assets/bubble1.png");
+    background-position-x: 0px;
+    background-position-y: 0px;
     height: 250px;
     width: 250px;
     background-color: midnightblue;
-    border-radius: 50%;
     display: inline-block;
     margin-top:2%;
 }

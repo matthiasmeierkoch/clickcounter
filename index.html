@@ -10,44 +10,44 @@
 <body>
 
 <div class="grid-x">
-    <!--
-        <div class="large-10 large-offset-1 center startscreen" id="startScreen">
-            <h2>Click Challange</h2>
-            <p>How many clicks can you get?</p>
-            <p>Click «Start» when you're read!</p>
-            <div class="center startbutton" id="close">
-                <p class="buttontext">Start</p>
-            </div>
+
+    <div class="large-10 large-offset-1 center startscreen" id="startScreen">
+        <h2>Click Challange</h2>
+        <p>How many clicks can you get?</p>
+        <p>Click «Start» when you're read!</p>
+        <div class="center startbutton" id="close">
+            <p class="buttontext">Start</p>
         </div>
--->
-        <div class=" spacer large-offset-2 large-8 center container" id="showOverlay">
-
-            <h1 class="title">click here</h1>
-            <img class="arrow bounce-top" src="assets/down-arrow.svg"><br>
-
-            <div id="cookie"></div>
-            <div id="counter">0</div>
-            time left:
-            <div id="timeview">5</div>
-            s
-
-            <progress value="5" max="5" id="progressBar"></progress>
-        </div>
-
     </div>
 
+    <div class=" layer-hidden spacer large-offset-2 large-8 center container" id="showOverlay">
 
-    <div class="layer-hidden gameover large-12" id="gameOver">
+        <h1 class="title">click here</h1>
+        <img class="arrow bounce-top" src="assets/down-arrow.svg"><br>
 
-        <div class="spacer">
-            <div id="gameover">time out, your score:</div>
-            <div id="total">0</div>
-            <a href="javascript:history.go(0)">Restart</a>
-        </div>
+        <div id="cookie"></div>
+        <div id="counter">0</div>
+        time left:
+        <div id="timeview">5</div>
 
+
+        <progress value="5" max="5" id="progressBar"></progress>
     </div>
 
-    <script src="test.js"></script>
+</div>
 
-    </body>
-    </html>
+
+<div class="layer-hidden gameover large-12" id="gameOver">
+
+    <div class="spacer">
+        <div id="score">time out, your score:</div>
+        <div id="total">0</div>
+        <a href="javascript:history.go(0)">Restart</a>
+    </div>
+
+</div>
+
+<script src="test.js"></script>
+
+</body>
+</html>
