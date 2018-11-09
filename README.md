@@ -1,4 +1,5 @@
 # clickcounter
+MIT License
 
 Download repo with Git:
 `$ git clone https://github.com/matthiasmeierkoch/clickcounter`
