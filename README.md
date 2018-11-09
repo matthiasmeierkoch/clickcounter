@@ -5,6 +5,7 @@ Download repo with Git:
 `$ git clone https://github.com/matthiasmeierkoch/clickcounter`
 
 ## License
+matthiasmeierkoch/clickercounter is licensed under the [MIT License](LICENSE).
 
 Copyright (c) 2018 [Matthias Koch](https://github.com/matthiasmeierkoch)
 
