@@ -26,6 +26,13 @@ a {
     font-weight: 600;
 }
 
+.backbutton {
+    width:25px;
+    top:28px;
+    left:28px;
+    position:absolute;
+}
+
 .buttontext {
     text-align: center;
     padding-top: 0.7rem;
@@ -54,10 +61,7 @@ a {
 
 #cookie {
     width: 40%;
-
     margin: auto 0;
-
-
 }
 
 #counter {

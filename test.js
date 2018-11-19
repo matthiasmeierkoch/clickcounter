@@ -79,6 +79,5 @@ cookie.addEventListener("mouseup", mouseup);
 start.addEventListener("click", startGame);
 restart.addEventListener("click", startGame);
 
-
 showStartScreen();
 
