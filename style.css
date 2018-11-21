@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai:400,600');
 
-* {
-    user-select: none;
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
 }
 
 body {
@@ -47,6 +52,7 @@ a {
     width: 180px;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .startscreen {
@@ -62,6 +68,7 @@ a {
 #cookie {
     width: 40%;
     margin: auto 0;
+    cursor: pointer;
 }
 
 #counter {
@@ -126,7 +133,79 @@ progress {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
+/* media queries for mobile min max width 320px */
+@media only screen and (max-device-width: 480px) {
+  .backbutton {
+    width:80px;
+    top:43px;
+    left:40px;
+    position:absolute;
+  }
 
+  .center {
+    transform: translate(0%, 60%);
+  }
 
+  .startbutton {
+    width: 400px;
+    height: 120px;
+    margin-top:0rem;
+  }
 
+  .buttontext {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 3rem;
+      font-weight: 600;
+  }
 
+  .text {
+    font-size: 3rem;
+    line-height:1.5rem;
+}
+
+h2 {
+    margin-top: 0rem;
+    font-size: 7rem;
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 0rem;
+    line-height: 3.8rem;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.timesection {
+    font-size: 3rem;
+}
+
+.gameover {
+    font-size: 7rem;
+}
+
+#score {
+  font-size:3rem;
+}
+
+#restart {
+  font-size:5rem;
+}
+
+.gameOverText {
+  margin-top:37rem;
+}
+
+.challangeText {
+  margin-top:13rem;
+
+}
+
+#cookie {
+    width: 60%;
+}
+
+}
